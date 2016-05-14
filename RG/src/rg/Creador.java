@@ -7,7 +7,7 @@ public class Creador implements Runnable{
     public ArrayList <proceso> Procesos;
     Random aleatorio;
     Reloj reloj;
-    
+     
     public Creador (Reloj reloj) {
         aleatorio = new Random();
         reloj = reloj;
