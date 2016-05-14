@@ -154,6 +154,7 @@ public class RGInterface extends javax.swing.JFrame {
     private void jButtonAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAboutActionPerformed
         Acerca Ventana = new Acerca();
         Ventana.setVisible(true);
+        System.out.println("Funciona!!!!");
     }//GEN-LAST:event_jButtonAboutActionPerformed
 
     /**
