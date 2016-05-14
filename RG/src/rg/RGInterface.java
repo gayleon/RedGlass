@@ -10,6 +10,8 @@ public class RGInterface extends javax.swing.JFrame {
     public RGInterface() {
         super("ESTADOS DE PROCESO");
         initComponents();
+        
+        
         String cabecera[]={"ID","TOTAL","QUANTUM"};
         String datos[][]={};
         modelo = new DefaultTableModel(datos,cabecera);

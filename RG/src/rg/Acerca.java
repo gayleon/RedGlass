@@ -17,6 +17,9 @@ public class Acerca extends javax.swing.JFrame {
     public Acerca() {
         super("ACERCA");
         initComponents();
+        this.setDefaultCloseOperation(0);
+        
+        //setDefaultCloseOperation(0);
     }
 
     /**
