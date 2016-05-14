@@ -9,6 +9,7 @@ public class Reloj implements Runnable{
     
     public Reloj(int v) {
         cuenta = 0;
+        valor = v;
     }
     
     public void run() {
