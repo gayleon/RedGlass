@@ -14,11 +14,13 @@ import java.util.Random;
 public class proceso {
     Random r;
     public final String ID;
+    public String estado;
     public int tiempoT, quantum, tRestante;
     
     public proceso(){
         r = new Random();
         ID = Integer.toString(r.nextInt(10000));
+        estado = "listo";
         tiempoT = r.nextInt(100)+50;
         quantum = r.nextInt(10)+5;
         tRestante = quantum;
