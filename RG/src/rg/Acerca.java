@@ -15,6 +15,7 @@ public class Acerca extends javax.swing.JFrame {
      * Creates new form Acerca
      */
     public Acerca() {
+        super("ACERCA");
         initComponents();
     }
 
@@ -40,21 +41,29 @@ public class Acerca extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jLabel1.setText("Pantoja Orozco Sabdi Abraham");
 
+        jButtonCerrar.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
         jButtonCerrar.setText("Cerrar");
+        jButtonCerrar.setToolTipText("Close the window");
+        jButtonCerrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonCerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCerrarActionPerformed(evt);
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jLabel2.setText("Castro Urieta Alondra");
 
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jLabel3.setText("Mogica Martínez Mariano");
 
+        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jLabel4.setText("Espinoza Sixtos Victor Hugo");
 
+        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 3, 12)); // NOI18N
         jLabel5.setText("Muñoz Ledo Hurtado Baltazar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -67,19 +76,19 @@ public class Acerca extends javax.swing.JFrame {
                         .addGap(163, 163, 163)
                         .addComponent(jButtonCerrar))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(124, 124, 124)
+                        .addGap(112, 112, 112)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel1)
                             .addComponent(jLabel3)
                             .addComponent(jLabel5)
                             .addComponent(jLabel4))))
-                .addContainerGap(140, Short.MAX_VALUE))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(169, Short.MAX_VALUE)
+                .addContainerGap(137, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
@@ -89,7 +98,7 @@ public class Acerca extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(3, 3, 3)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jButtonCerrar)
                 .addContainerGap())
         );
