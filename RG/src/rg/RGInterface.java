@@ -71,6 +71,11 @@ public class RGInterface extends javax.swing.JFrame {
         jButtonAdminTareas.setText("Administrador de Tareas");
 
         jButtonAbout.setText("About");
+        jButtonAbout.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonAboutActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,6 +150,11 @@ public class RGInterface extends javax.swing.JFrame {
     private void jButtonStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStartActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonStartActionPerformed
+
+    private void jButtonAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAboutActionPerformed
+        Acerca Ventana = new Acerca();
+        Ventana.setVisible(true);
+    }//GEN-LAST:event_jButtonAboutActionPerformed
 
     /**
      * @param args the command line arguments
