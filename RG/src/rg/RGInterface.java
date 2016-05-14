@@ -4,7 +4,7 @@ package rg;
 import java.util.ArrayList;
 
 public class RGInterface extends javax.swing.JFrame {
-    public ArrayList <proceso> Procesos;
+    Reloj reloj;
     public RGInterface() {
         initComponents();
     }
@@ -151,7 +151,9 @@ public class RGInterface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStartActionPerformed
-        // TODO add your handling code here:
+        reloj = new Reloj(1000);
+        Creador processMaker = new Creador(reloj);
+        Thread creador = new Thread(processMaker);
     }//GEN-LAST:event_jButtonStartActionPerformed
 
     private void jButtonAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAboutActionPerformed

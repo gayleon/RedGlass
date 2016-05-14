@@ -26,4 +26,8 @@ public class proceso {
         tRestante = quantum;
         System.out.println(ID+" "+tRestante+" "+quantum);       
     }    
+    
+    public String retornarEstado() {
+        return estado;
+    }
 }
