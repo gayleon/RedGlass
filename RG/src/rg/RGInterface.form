@@ -85,7 +85,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="31" max="32767" attributes="0"/>
+              <EmptySpace pref="10" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -110,6 +110,10 @@
     <Component class="javax.swing.JButton" name="jButtonStart">
       <Properties>
         <Property name="text" type="java.lang.String" value="Start"/>
+        <Property name="toolTipText" type="java.lang.String" value="Begins the program"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor de Mano"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonStartActionPerformed"/>
@@ -118,6 +122,10 @@
     <Component class="javax.swing.JButton" name="jButtonStop">
       <Properties>
         <Property name="text" type="java.lang.String" value="Stop"/>
+        <Property name="toolTipText" type="java.lang.String" value="Stop the program"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor de Mano"/>
+        </Property>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -151,35 +159,59 @@
       </SubComponents>
     </Container>
     <Component class="javax.swing.JProgressBar" name="jProgressBar1">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Quantum of the actually process"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Comic Sans MS" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Listos"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Comic Sans MS" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ejecuci&#xf3;n"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Comic Sans MS" size="18" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Quantum"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ejecuci&#xf3;n"/>
+        <Property name="toolTipText" type="java.lang.String" value="Proceso actual"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonAdminTareas">
       <Properties>
         <Property name="text" type="java.lang.String" value="Administrador de Tareas"/>
+        <Property name="toolTipText" type="java.lang.String" value="Shows the process list"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor de Mano"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButtonAbout">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="11" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="About"/>
+        <Property name="toolTipText" type="java.lang.String" value="Information about the designers of this software"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Cursor de Mano"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonAboutActionPerformed"/>

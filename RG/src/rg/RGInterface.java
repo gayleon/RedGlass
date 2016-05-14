@@ -44,6 +44,8 @@ public class RGInterface extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButtonStart.setText("Start");
+        jButtonStart.setToolTipText("Begins the program");
+        jButtonStart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonStart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonStartActionPerformed(evt);
@@ -51,6 +53,8 @@ public class RGInterface extends javax.swing.JFrame {
         });
 
         jButtonStop.setText("Stop");
+        jButtonStop.setToolTipText("Stop the program");
+        jButtonStop.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jTextAreaListos.setColumns(20);
         jTextAreaListos.setRows(5);
@@ -60,17 +64,28 @@ public class RGInterface extends javax.swing.JFrame {
         jTextAreaBloqueados.setRows(5);
         jScrollPane3.setViewportView(jTextAreaBloqueados);
 
+        jProgressBar1.setToolTipText("Quantum of the actually process");
+
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel1.setText("Listos");
 
+        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel2.setText("Ejecución");
 
+        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         jLabel3.setText("Quantum");
 
         jTextField1.setText("Ejecución");
+        jTextField1.setToolTipText("Proceso actual");
 
         jButtonAdminTareas.setText("Administrador de Tareas");
+        jButtonAdminTareas.setToolTipText("Shows the process list");
+        jButtonAdminTareas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        jButtonAbout.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jButtonAbout.setText("About");
+        jButtonAbout.setToolTipText("Information about the designers of this software");
+        jButtonAbout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonAbout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonAboutActionPerformed(evt);
@@ -128,7 +143,7 @@ public class RGInterface extends javax.swing.JFrame {
                     .addComponent(jButtonAbout))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
