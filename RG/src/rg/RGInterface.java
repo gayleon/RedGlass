@@ -28,6 +28,7 @@ public class RGInterface extends javax.swing.JFrame {
         jButtonAbout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButtonStart.setText("Start");
         jButtonStart.setToolTipText("Begins the program");
@@ -146,6 +147,7 @@ public class RGInterface extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonStartActionPerformed

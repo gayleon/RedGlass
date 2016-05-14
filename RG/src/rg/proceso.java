@@ -24,6 +24,6 @@ public class proceso {
         tiempoT = r.nextInt(100)+50;
         quantum = r.nextInt(10)+5;
         tRestante = quantum;
-        System.out.println(ID+" "+tRestante+" "+quantum);        
+        System.out.println(ID+" "+tRestante+" "+quantum);       
     }    
 }
